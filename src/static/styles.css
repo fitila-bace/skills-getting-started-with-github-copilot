@@ -58,20 +58,113 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid #e0e4f0;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fff 0%, #f7f8fd 100%);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.07);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 6px;
+  color: #1a237e;
+  font-size: 1.15rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-description {
+  color: #555;
+}
+
+.activity-card .activity-detail {
+  margin-bottom: 5px;
+  color: #454b5a;
+  font-size: 0.95rem;
+}
+
+.participants-section {
+  margin-top: 16px;
+  padding-top: 13px;
+  border-top: 1px solid #e2e5ef;
+}
+
+.participants-section h5 {
+  margin-bottom: 9px;
+  color: #1a237e;
+  font-size: 0.95rem;
+}
+
+.participants-list {
+  display: grid;
+  gap: 7px;
+  padding-left: 0;
+  color: #42495a;
+  list-style: none;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+  padding: 5px 7px 5px 11px;
+  border-radius: 6px;
+  background-color: rgba(83, 109, 254, 0.06);
+}
+
+.participant-email {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-remove-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid #f0c6c8;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #b4232e;
+}
+
+.participant-remove-button:hover {
+  background-color: #fff0f0;
+}
+
+.participant-remove-button:focus-visible {
+  outline: 3px solid rgba(180, 35, 46, 0.3);
+  outline-offset: 2px;
+}
+
+.participant-remove-button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.participant-remove-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.activity-card .participants-empty {
+  margin-bottom: 0;
+  color: #777e8f;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .form-group {
